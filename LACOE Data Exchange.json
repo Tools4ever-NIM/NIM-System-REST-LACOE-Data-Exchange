@@ -1,0 +1,265 @@
+{
+    "schema": {
+        "crud_objects": {
+            "EmployeeActivePositions": {
+                "operations": {
+                    "EmployeeActivePositionsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/api/v1/EmployeeActivePositions"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key": "employeeId",
+                "resources": {
+                    "employeeId": "string*",
+                    "appointmentId": "string*",
+                    "titleCd": "string*",
+                    "subTitleCd": "string*",
+                    "sttlLongDd": "string*",
+                    "sttlShortDd": "string*",
+                    "permTempId": "string*",
+                    "emplmtStaCd": "string*",
+                    "payrollNoCd": "string*",
+                    "posnId": "string*",
+                    "hrsPosnId": "string*",
+                    "phstLongDd": "string*",
+                    "phstShortDd": "string*",
+                    "homeDeptCd": "string*"
+                }
+            },
+            "EmployeeDemographics": {
+                "operations": {
+                    "EmployeeDemographicsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/api/v2/EmployeeDemographics"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key": "employeeId",
+                "resources": {
+                    "exDate": "string*",
+                    "homeDeptCd": "string*",
+                    "employeeId": "string*",
+                    "emplPrefixCd": "string*",
+                    "emplLastNm": "string*",
+                    "emplFirstNm": "string*",
+                    "emplSuffixCd": "string*",
+                    "sexId": "string*",
+                    "birthDt": "string*",
+                    "jobTitle": "string*",
+                    "positionNo": "string*",
+                    "employeeType": "string*",
+                    "employmentStatus": "string*",
+                    "c1stHireDate": "string*",
+                    "c1stProbationaryDate": "string*",
+                    "terminationDate": "string*",
+                    "terminationReason": "string*",
+                    "partFull": "string*",
+                    "permanencyInd": "string*",
+                    "jobClass": "string*",
+                    "jobType": "string*",
+                    "jobStatusDate": "string*",
+                    "appointmentId": "string*",
+                    "flsaStatus": "string*",
+                    "payLctnCd": "string*",
+                    "wrkLctnCd": "string*",
+                    "workLocationName": "string*",
+                    "workLocationAddress": "string*",
+                    "workLocationCity": "string*",
+                    "workLocationState": "string*",
+                    "workLocationZip": "string*",
+                    "workLocationZipExtn": "string*",
+                    "timeReportLocation": "string*",
+                    "unionLocCd": "string*",
+                    "supervisorId": "string*",
+                    "supervisorName": "string*",
+                    "overrideSupervisorEid": "string*",
+                    "overrideSupervisorName": "string*",
+                    "currentAddress": "string*",
+                    "currentCity": "string*",
+                    "currentState": "string*",
+                    "currentZip": "string*",
+                    "currentZipExtn": "string*",
+                    "homePhoneNo": "string*",
+                    "emerContact": "string*",
+                    "emerPhoneNo": "string*",
+                    "emerPhoneNoExt": "string*",
+                    "emerRelationship": "string*",
+                    "priorName": "string*",
+                    "tbDate": "string*",
+                    "ethnCd": "string*",
+                    "dsblCd": "string*",
+                    "originalHireDate": "string*",
+                    "substitutionFlag": "string*",
+                    "hrsEid": "string*",
+                    "asgnmtEffDt": "string*",
+                    "asgnmtEndDt": "string*",
+                    "emplMiddleNm": "string*",
+                    "c1stWorkDt": "string*",
+                    "yrsOfService": "string*",
+                    "permTempId": "string*",
+                    "raceDescription": "string*",
+                    "educationalLvl": "string*",
+                    "personalEmail1": "string*",
+                    "primaryFlag1": "string*",
+                    "personalEmail2": "string*",
+                    "primaryFlag2": "string*",
+                    "preferedFirstName": "string*",
+                    "preferedLastName": "string*",
+                    "userCd1": "string*",
+                    "userCd2": "string*",
+                    "userCd3": "string*",
+                    "userCd4": "string*",
+                    "userCd5": "string*",
+                    "userDt1": "string*",
+                    "userDt2": "string*",
+                    "userDt3": "string*",
+                    "userDt4": "string*",
+                    "userDt5": "string*",
+                    "seniorityDt": "string*",
+                    "esmtNextEvaluationDate": "string*",
+                    "lcdNextEvaluationDate": "string*",
+                    "unionMember": "string*"
+                }
+            },
+            "EmployeePrimeJobAttributes": {
+                "operations": {
+                    "EmployeePrimeJobAttributesList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/api/v1/EmployeePrimeJobAttributes"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key": "employeeId",
+                "resources": {
+                    "employeeId": "string*",
+                    "emplLastNm": "string*",
+                    "emplFirstNm": "string*",
+                    "jobClass": "string*",
+                    "subTitleCd": "string*",
+                    "jobTitle": "string*",
+                    "eeStatus": "string*",
+                    "probationDate": "string*",
+                    "payLctnCd": "string*",
+                    "positionNo": "string*",
+                    "jobType": "string*",
+                    "flsaStatus": "string*",
+                    "pctFullTime": "string*",
+                    "wrkLctnCd": "string*",
+                    "wrkLctnLongDd": "string*",
+                    "jobStatus": "string*",
+                    "jobStatDt": "string*",
+                    "terminationDate": "string*",
+                    "timeReportLocation": "string*",
+                    "payCycleCd": "string*",
+                    "payBasis": "string*",
+                    "payPolicy": "string*",
+                    "holidayRule": "string*",
+                    "bargUnit": "string*",
+                    "workCalendar": "string*",
+                    "payCategory": "string*",
+                    "payType": "string*",
+                    "accessGroup": "string*",
+                    "stdDlyWrkHrCt": "string*",
+                    "hourlyRate": "string*",
+                    "supervisorId": "string*",
+                    "supervisorName": "string*",
+                    "timeApproverEid": "string*",
+                    "timeApproverName": "string*",
+                    "timekeeperEid": "string*",
+                    "timekeeperName": "string*",
+                    "supervisorNotificationEid": "string*",
+                    "sendRequests": "string*",
+                    "acctString": "string*",
+                    "acctPct": "string*",
+                    "hrsUpn": "string*",
+                    "adMail": "string*",
+                    "preferencesProfileEmail": "string*",
+                    "trlDescription": "string*",
+                    "payMonths": "string*",
+                    "hrsEid": "string*",
+                    "appointmentId": "string*",
+                    "asgnmtEffDt": "string*",
+                    "asgnmtEndDt": "string*",
+                    "labrDistProfCd": "string*",
+                    "homeDeptCd": "string*",
+                    "seid": "string*",
+                    "degrCd": "string*",
+                    "emplMiddleNm": "string*",
+                    "jobStartDate": "string*"
+                }
+            }
+        }
+    },
+    "rest": {
+        "config": {
+            "baseUrl": "https://lacoedataexchangeuat.lacoe.edu",
+            "get": {
+            },
+            "authentication": "custom_post_token",
+            "accept": "application/json",
+            "call_handling": "generic",
+            "test_connection": {
+                "url": "/api/v2/EmployeeDemographics"
+            },
+            "headers": {
+                "Authorization": "Bearer {client_secret}"
+            },
+            "retry": [
+                {
+                    "type": "statusCode",
+                    "statusCode": 429,
+                    "retry": {
+                        "type": "simple",
+                        "maxCount": 20,
+                        "waitTime": 10
+                    }
+                },
+                {
+                    "type": "connectionError"
+                }
+            ]
+        },
+        "authOptions": {
+            "type": "custom_post_token",
+            "authUrl": "https://lacoedataexchangeuat.lacoe.edu/api/v1/token",
+            "postData": {
+                "keyGuid": "{password}"
+            },
+            "tokenPath": "token"
+        }
+    },
+    "connection": {
+        "items": [
+            {
+                "name": "user_name",
+                "type": "textbox",
+                "label": "Username",
+                "hidden": "page_size",
+                "required": false,
+                "value": "Not required",
+                "tooltip": "This field is not used",
+                "disabled": "page_size"
+            },
+            {
+                "name": "password",
+                "type": "textbox",
+                "label": "API Key",
+                "required": false,
+                "tooltip": "Provide the API Secret to authorize the request"
+            }
+        ]
+    }
+}
