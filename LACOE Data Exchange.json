@@ -205,9 +205,8 @@
     },
     "rest": {
         "config": {
-            "baseUrl": "https://lacoedataexchangeuat.lacoe.edu",
-            "get": {
-            },
+            "baseUrl": "https://{tenant_id}",
+            "get": {},
             "authentication": "custom_post_token",
             "accept": "application/json",
             "call_handling": "generic",
@@ -234,7 +233,7 @@
         },
         "authOptions": {
             "type": "custom_post_token",
-            "authUrl": "https://lacoedataexchangeuat.lacoe.edu/api/v1/token",
+            "authUrl": "https://{tenant_id}/api/v1/token",
             "postData": {
                 "keyGuid": "{password}"
             },
@@ -244,6 +243,22 @@
     "connection": {
         "items": [
             {
+                "name": "tenant_id",
+                "type": "textbox",
+                "label": "Hostname:",
+                "value": "lacoedataexchange.lacoe.edu",
+                "required": true,
+                "order": 1
+            },
+			{
+                "name": "password",
+                "type": "textbox",
+                "label": "API Key",
+                "required": false,
+                "tooltip": "Provide the API Secret to authorize the request",
+				"order": 2
+            },
+			{
                 "name": "user_name",
                 "type": "textbox",
                 "label": "Username",
@@ -251,15 +266,10 @@
                 "required": false,
                 "value": "Not required",
                 "tooltip": "This field is not used",
-                "disabled": "page_size"
-            },
-            {
-                "name": "password",
-                "type": "textbox",
-                "label": "API Key",
-                "required": false,
-                "tooltip": "Provide the API Secret to authorize the request"
+                "disabled": "page_size",
+				"order": 3
             }
+            
         ]
     }
 }
